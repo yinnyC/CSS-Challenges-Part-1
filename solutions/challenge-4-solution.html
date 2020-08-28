@@ -42,8 +42,9 @@
       color: #000;
     }
   
+
     /* Style the author */
-    blockquote > footer {
+    blockquote footer {
       /* Make the font smaller */
       font-size: 0.5em;
       /* Make the font bold */
@@ -51,35 +52,47 @@
       /* Change the color */
       color: #666;
     }
+
+    /* Now style the footer at the bottom of the page */
+    /* This footer is a child of main. Use this selector: */
+    /* main > footer */
+    main > footer {
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
 
-<ul>
-  <li>
-    <blockquote>
-      <p>&ldquo;The first step toward success is taken when you refuse 
-          to be a captive of the environment in which you first 
-          find yourself.&rdquo;</p>
-      <footer>
-        <p>&mdash; Mark Caine</p>
-      </footer>
-    </blockquote>
-  </li>
+  <main>
+    <header>
+      <h1>Famous Quotes</h1>
+    </header>
 
-  <li>
-      <blockquote>
-        <p>&ldquo;Twenty years from now you will be more disappointed by 
+    <ul>
+      <li>
+        <blockquote>
+          <p>&ldquo;The first step toward success is taken when you refuse 
+            to be a captive of the environment in which you first 
+            find yourself.&rdquo;</p>
+          <footer>
+            <p>&mdash; Mark Caine</p>
+          </footer>
+        </blockquote>
+      </li>
+
+      <li>
+        <blockquote>
+          <p>&ldquo;Twenty years from now you will be more disappointed by 
             the things that you didn't do than by the ones you 
             did do.&rdquo;</p>
-        <footer>
-          <p>&mdash; Mark Twain</p>
-        </footer>
-      </blockquote>
-    </li>
+          <footer>
+            <p>&mdash; Mark Twain</p>
+          </footer>
+        </blockquote>
+      </li>
 
-    <li>
+      <li>
         <blockquote>
           <p>&ldquo;Those who dare to fail miserably can achieve greatly.&rdquo;</p>
           <footer>
@@ -87,7 +100,11 @@
           </footer>
         </blockquote>
       </li>
-</ul>
+    </ul>
 
+    <footer>
+      <small>Copyright 2020 FamousQuotes.com</small>
+    </footer>
+  </main>
 </body>
 </html>
